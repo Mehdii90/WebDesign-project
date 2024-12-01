@@ -57,6 +57,48 @@ main {
     margin-top: 100px; /* Push content below fixed header */
 }
 
+.timeline {
+    background: #fef9d9; /* Pastel background for distinction */
+    padding: 2em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.timeline-container {
+    display: flex;
+    overflow-x: scroll; /* Horizontal scroll for smaller screens */
+    gap: 1.5em;
+    padding: 1em 0;
+}
+
+.timeline-item {
+    flex: 0 0 250px; /* Fixed width for each timeline item */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    color: #ffd700; /* Gold for emphasis */
+    margin-bottom: 0.5em;
+}
+
 .history-intro {
     text-align: center;
     margin-bottom: 2em;
@@ -74,30 +116,80 @@ main {
 
 .history-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows multiple sections to adjust dynamically */
     gap: 2em;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 2em;
 }
 
 .history-content article {
-    flex: 1 1 calc(45% - 2em); /* Responsive two-column layout */
-    background: #fef9d9; /* Pastel tone for sections */
+    flex: 1 1 calc(48% - 1em); /* Allow sections to take up to 48% of the row */
+    background: #fef9d9; /* Light pastel for distinction */
     border-radius: 8px;
-    padding: 1.5em;
+    padding: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
 }
 
 .history-content article img {
-    width: 100%;
-    border-radius: 8px;
+    max-height: 300px; /* Restrict image height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent image from exceeding container width */
+    border-radius: 8px; /* Rounded corners */
     margin-bottom: 1em;
-    transition: transform 0.3s ease-in-out; /* zoom effect when mouse on picture */
+    object-fit: contain; /* Adjusts the image within the given space */
 }
 
-.history-content article img:hover {
-    transform: scale(1.1); /* Zoom on hover */
+.history-content article p {
+    text-align: justify; /* Improve readability */
+    margin-top: 0.5em;
+}
+
+.image-gallery {
+    display: flex; /* Enables a row layout for images */
+    gap: 3em; /* Adds space between images */
+    flex-wrap: wrap; /* Allows images to wrap onto the next row on smaller screens */
+    justify-content: center; /* Centers the gallery within the article */
+    margin: 1em 0; /* Adds spacing above and below the gallery */
+}
+
+.image-gallery img {
+    flex: 1 1 calc(33% - 1em); /* Each image takes up roughly 33% of the row */
+    max-width: 100%; /* Prevents images from exceeding their container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds rounded corners for a polished look */
+    object-fit: cover; /* Ensures images fit neatly without distortion */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+    cursor: pointer; /* Makes images interactive */
+    transition: transform 0.3s; /* Adds a hover effect */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover for emphasis */
+}
+
+/* Target only the Louis XIV gallery */
+.louis-xiv-gallery {
+    display: flex; /* Enables side-by-side layout */
+    gap: 3em; /* Adds space between the images */
+    justify-content: center; /* Centers the images horizontally */
+    flex-wrap: nowrap; /* Prevents wrapping so the images stay side by side */
+}
+
+.louis-xiv-gallery img {
+    flex: 1 1 45%; /* Each image takes up 45% of the container */
+    max-width: 100%; /* Ensures images don’t exceed their container width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds rounded corners */
+    object-fit: cover; /* Ensures images fit neatly without distortion */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth with shadows */
+}
+
+.louis-xiv-gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover for emphasis */
 }
 
 .history-content article h2 {
@@ -105,9 +197,43 @@ main {
     margin-bottom: 0.5em;
     color: #333;
 }
+.history-content article {
+    flex: 1 1 auto; /* Dynamic size based on content */
+    padding: 1.5em;
+    margin-bottom: 1em;
+    background: #fef9d9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
 
 .history-content article p {
     color: #555;
+}
+
+/* Lightbox Effect */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Shadow effect */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.lightbox.active {
+    display: flex; /* Shows the lightbox when active */
 }
 
 /* Footer */

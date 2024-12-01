@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif; 
+    background-color: #ffffff; 
+    color: #333; 
+    line-height: 1.6;
+    padding: 0 1em;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; /* it starts at the very left */
+    z-index: 1000;
+}
+
+nav {
+    width: 100%; /*takes the full screen width */
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffd700; 
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../assets/images/versailles-hero.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.4em;
+}
+
+/* Intro Section with Background Image */
+.intro {
+    background: url('../images/sightseeing/versaillesintro.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.intro h2 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.intro p {
+    font-size: 1.4em;
+    max-width: 900px;
+    margin-top: 1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Town and Attractions Sections */
+.town, .attractions {
+    background: #fef9d9;
+    padding: 3em 1em;
+}
+
+.town h2, .attractions h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+}
+
+.town-grid, .attraction-grid {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.town-item, .attraction-item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.town-item img, .attraction-item img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.town-item h3, .attraction-item h3 {
+    margin: 1em 0 0.5em;
+    font-size: 1.5em;
+}
+
+.town-item p, .attraction-item p {
+    padding: 0 1em 1em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
