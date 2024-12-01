@@ -88,3 +88,11 @@ nav {
 .cta-button:hover {
     background: #e6c200; /* darker gold for hover*/
 }
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
