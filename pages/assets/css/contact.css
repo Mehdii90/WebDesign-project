@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Georgia", serif; 
+    background-color: #ffffff; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; /* it starts at the very left */
+    z-index: 1000;
+}
+
+.header-nav {
+    padding: 1em 2em;
+    background: #333; /* Semi-transparent black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffd700; 
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Main Content */
+main {
+    margin-top: 100px; /* Push content below fixed header */
+}
+
+.history-intro {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.history-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.history-intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.history-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.history-content article {
+    flex: 1 1 calc(45% - 2em); /* Responsive two-column layout */
+    background: #fef9d9; /* Pastel tone for sections */
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.history-content article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease-in-out; /* zoom effect when mouse on picture */
+}
+
+.history-content article img:hover {
+    transform: scale(1.1); /* Zoom on hover */
+}
+
+.history-content article h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.history-content article p {
+    color: #555;
+}
+
+main h1 {
+    /* border: 3px solid red; */
+    text-align: center;
+    margin: 4em 0 0 0;
+}
+
+.tourist-offices {
+    width: 80%;
+    margin: auto;
+    /* border: 3px solid blue; */
+}
+
+.office {
+    /* display: flex; */
+    padding: 2em 0;
+    clear: both;
+}
+
+.office .image {
+    /* border: 3px solid red; */
+    float: left;
+    padding: 1em 0; 
+    /* padding: haut droite bas gauche;  */
+    margin: 0 0 0 3em;
+}
+
+.office:nth-of-type(2n) .image {
+    float: right;
+    margin: 0 3em 0 0;
+}
+
+.office .info {
+    float: left;
+    /* border: 3px solid red; */
+    margin: 2em 5em
+}
+
+.office:nth-of-type(2n) .info {
+    float: right
+}
+
+.info h2 {
+    color: #ffd700;
+}
+
+.info h3 {
+    padding: 0.5em 0;
+}
+
+.opening-hours {
+    margin-left: 2em;
+}
+
+.opening-hours tr th:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+.opening-hours tr td {
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.contact-form {
+    text-align: center;
+    border: 3px solid red;
+    padding-top: 3em;
+    width: 70%;
+    margin: auto;
+}
+
+/* Footer */
+body .footer {
+    background: #333;
+    color: #fff;
+    /* text-align: center; */
+    padding: 2em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
