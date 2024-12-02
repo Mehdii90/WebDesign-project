@@ -56,63 +56,10 @@ main {
     margin-top: 100px; /* Push content below fixed header */
 }
 
-.history-intro {
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-.history-intro h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-.history-intro p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-.history-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: space-around;
-    margin-bottom: 2em;
-}
-
-.history-content article {
-    flex: 1 1 calc(45% - 2em); /* Responsive two-column layout */
-    background: #fef9d9; /* Pastel tone for sections */
-    border-radius: 8px;
-    padding: 1.5em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.history-content article img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1em;
-    transition: transform 0.3s ease-in-out; /* zoom effect when mouse on picture */
-}
-
-.history-content article img:hover {
-    transform: scale(1.1); /* Zoom on hover */
-}
-
-.history-content article h2 {
-    font-size: 1.8em;
-    margin-bottom: 0.5em;
-    color: #333;
-}
-
-.history-content article p {
-    color: #555;
-}
-
 main h1 {
     /* border: 3px solid red; */
     text-align: center;
-    margin: 4em 0 0 0;
+    margin-top: 4em;
 }
 
 .tourist-offices {
