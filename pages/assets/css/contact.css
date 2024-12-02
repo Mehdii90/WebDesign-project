@@ -28,26 +28,28 @@ body {
     align-items: center;
 }
 
-nav .logo {
+.logo {
     font-size: 1.8em;
     font-weight: bold;
+    text-decoration: none;
     color: #ffd700; 
 }
 
-nav .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 1.5em;
 }
 
-nav .nav-links a {
+a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: 1.1em;
 }
 
-nav .nav-links a:hover {
+a:hover {
     color: #ffd700;
 }
 

@@ -12,7 +12,7 @@ body {
     padding: 0 1em;
 }
 
-header {
+.header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -20,35 +20,36 @@ header {
     z-index: 1000;
 }
 
-nav {
-    width: 100%; /*takes the full screen width */
+.header-nav {
     padding: 1em 2em;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    background: #333; /* Semi-transparent black */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .logo {
+.logo {
     font-size: 1.8em;
     font-weight: bold;
+    text-decoration: none;
     color: #ffd700; 
 }
 
-nav .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 1.5em;
 }
 
-nav .nav-links a {
+a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: 1.1em;
 }
 
-nav .nav-links a:hover {
+a:hover {
     color: #ffd700;
 }
 
