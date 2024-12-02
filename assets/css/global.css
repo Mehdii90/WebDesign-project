@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header */
 .header {
     width: 100%;
     position: fixed;
@@ -52,6 +53,7 @@ a {
 a:hover {
     color: #ffd700;
 }
+
 main {
     height: 100vh; /* full screen height */
     background: url('../images/versailles.jpg') no-repeat center center/cover; 
@@ -59,6 +61,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 /* Hero Section */
 .intro {
     text-align: center;
