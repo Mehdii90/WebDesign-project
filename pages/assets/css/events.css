@@ -11,7 +11,9 @@ body {
     color: #333; 
     line-height: 1.6;
 }
-
+a {
+    text-decoration: none;
+}
 /* Header */
 .header {
     width: 100%;
@@ -42,15 +44,14 @@ body {
     gap: 1.5em;
 }
 
-a {
-    text-decoration: none;
+.nav-links a {
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
     font-size: 1.1em;
 }
 
-a:hover {
+.nav-links a:hover {
     color: #ffd700;
 }
 
@@ -59,7 +60,82 @@ main {
     margin-top: 100px; /* Push content below fixed header */
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
 
+.events {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 31%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 1em;
+    background: #fef9d9; /* Pastel background for distinction */
+    padding: 2em 1em;
+}
+
+.anchor {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+h3, p {
+    color: #555;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 0 1.5em;
+    margin: 1em 0;
+    color: #555;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.circle { /* Setup a yellow circle */
+    height: 6.5em;
+    width: 6.5em;
+    border-radius: 50%;             
+    background-color: #ffd700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tr { /* Place the item in the top right of it's parent */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 24px;
+    color: #0B23FF ;
+}
+
+hr {
+    width: 50%;
+    height: 0.1em;
+    border-width: 0px;
+    background-color: #0B23FF ;
+}
 
 
 /* Footer */
