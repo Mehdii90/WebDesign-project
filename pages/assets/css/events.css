@@ -14,7 +14,7 @@ body {
 a {
     text-decoration: none;
 }
-/* Header */
+
 .header {
     width: 100%;
     position: fixed;
@@ -55,9 +55,9 @@ a {
     color: #ffd700;
 }
 
-/* Main Content */
 main {
-    margin-top: 100px; /* Push content below fixed header */
+    margin-top: 100px; 
+    /*max-width: 1200px;*/
 }
 
 h1 {
@@ -76,7 +76,7 @@ article {
     border-radius: 8px;
     border: 1px solid #ddd;
     margin: 1em;
-    background: #fef9d9; /* Pastel background for distinction */
+    background: #fef9d9; /*soft pastel*/
     padding: 2em 1em;
 }
 
@@ -106,7 +106,7 @@ h3 {
     font-weight: bold;
 }
 
-.circle { /* Setup a yellow circle */
+.circle { 
     height: 6.5em;
     width: 6.5em;
     border-radius: 50%;             
@@ -118,7 +118,7 @@ h3 {
     flex-direction: column;
 }
 
-.tr { /* Place the item in the top right of it's parent */
+.tr { /*top right place for the item */
     position: absolute;
     top: 10px;
     right: 10px;
@@ -137,8 +137,6 @@ hr {
     background-color: #0B23FF ;
 }
 
-
-/* Footer */
 footer {
     text-align: center;
     padding: 1em;

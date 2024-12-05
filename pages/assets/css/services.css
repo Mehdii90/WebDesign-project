@@ -14,18 +14,18 @@ body {
 a {
     text-decoration: none;
 }
-/* Header */
+
 .header {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0; /* it starts at the very left */
+    left: 0; 
     z-index: 1000;
 }
 
 .header-nav {
     padding: 1em 2em;
-    background: #333; /* Semi-transparent black */
+    background: #333; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,9 +55,8 @@ a {
     color: #ffd700;
 }
 
-/* Main Content */
 main {
-    margin-top: 100px; /* Push content below fixed header */
+    margin-top: 100px; 
 }
 
 h1 {
@@ -76,7 +75,7 @@ article {
     border-radius: 8px;
     border: 1px solid #ddd;
     margin: 1em;
-    background: #fef9d9; /* Pastel background for distinction */
+    background: #fef9d9; /*soft pastel*/
     padding: 2em 1em;
 }
 
@@ -129,9 +128,10 @@ table {
 .sep tr:nth-child(2n+1), .sep tr:last-child {
     border-bottom: 0px;
 }
-
-
-/* Footer */
+/*
+.clear {
+    clear: both;
+}*/
 footer {
     text-align: center;
     padding: 1em;

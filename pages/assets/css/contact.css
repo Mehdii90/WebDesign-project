@@ -12,18 +12,17 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 .header {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0; /* it starts at the very left */
+    left: 0; /*it starts at the very left */
     z-index: 1000;
 }
 
 .header-nav {
     padding: 1em 2em;
-    background: #333; /* Semi-transparent black */
+    background: #333; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,9 +53,8 @@ a:hover {
     color: #ffd700;
 }
 
-/* Main Content */
 main {
-    margin-top: 100px; /* Push content below fixed header */
+    margin-top: 100px; 
 }
 
 main h1 {
@@ -87,7 +85,7 @@ main h1 {
 
 .office .info {
     float: left;
-    /* border: 3px solid red; */
+    /*padding: 0% 5%; */
     margin: 2em 5em
 }
 

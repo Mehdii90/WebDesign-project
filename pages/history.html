@@ -12,7 +12,7 @@
 <body>
     <div class="header">
         <nav class="header-nav">
-            <a href="../index.html" class="logo">Versailles</a>
+            <a href="../home.html" class="logo">Versailles</a>
             <ul class="nav-links">
                 <li><a href="history.html">History</a></li>
                 <li><a href="sightseeing.html">Sightseeing</a></li>
@@ -69,17 +69,18 @@
                     construction of a small
                     hunting lodge on the outskirts of Paris. Located in a rural forested area, it served as a peaceful
                     retreat away from the political intrigues of the capital. The modest building was made of brick and
-                    stone, intended for practical use rather than luxury. However, <b>Louis XIII</b> gradually expanded the
+                    stone, intended for practical use rather than luxury. However, <b>Louis XIII</b> gradually expanded
+                    the
                     site, adding stables and gardens, indicating his growing fondness for the location. While the
                     original lodge no longer exists, this early development marked the beginning of Versailles'
                     transformation into one of the most iconic royal estates in the world.</p>
             </article>
 
-            <article >
+            <article>
                 <h2>Louis XIV and the Palace</h2>
                 <div class="louis-xiv-gallery">
                     <img src="assets/images/history/louis14.jpg">
-                    <img src="assets/images/history/plan-chateau.jpg" >
+                    <img src="assets/images/history/plan-chateau.jpg">
                 </div>
                 <p>The true metamorphosis of Versailles began under <b>Louis XIV</b>, who ascended the throne in 1643
                     and
@@ -103,7 +104,7 @@
                     <img src="assets/images/history/revolution1.jpg">
                     <img src="assets/images/history/revolution2.jpg">
                 </div>
-                <p>By the late 18th century, Versailles had become synonymous with the excesses of the monarchy, and its
+                <p>By the late <b>18th century</b>, Versailles had become synonymous with the excesses of the monarchy, and its
                     grandeur stood in stark contrast to the struggles of the common people. In <b>May 1789</b>, King
                     <b>Louis XVI</b>
                     summoned the Estates-General to Versailles in an attempt to address France’s financial crisis. This
@@ -128,7 +129,8 @@
                     Treaty of Versailles, which officially ended <b>World War I</b>. The treaty, signed in the Hall of
                     Mirrors,
                     imposed severe reparations on Germany and redrew the map of Europe, establishing new nations and
-                    altering borders. The Hall of Mirrors, once a symbol of <b>Louis XIV</b>’s glory, now served as a setting
+                    altering borders. The Hall of Mirrors, once a symbol of <b>Louis XIV</b>’s glory, now served as a
+                    setting
                     for the contentious negotiations that followed the Great War. While the treaty aimed to ensure
                     lasting peace, its harsh terms created resentment in Germany, contributing to the rise of Adolf
                     Hitler and the outbreak of <b>World War II</b>. This moment marked Versailles not only as a
@@ -143,11 +145,13 @@
                     <img src="assets/images/history/todayversailles2.jpg">
                 </div>
                 <p>Versailles has transformed from a royal palace into one of the most visited and iconic cultural
-                    landmarks in the world. The Palace of Versailles, a<b> UNESCO</b> World Heritage Site since <b>1979</b>, attracts
+                    landmarks in the world. The Palace of Versailles, a<b> UNESCO</b> World Heritage Site since
+                    <b>1979</b>, attracts
                     millions of tourists annually who come to admire its architectural grandeur, lavish interiors like
                     the Hall of Mirrors, and the expansive gardens designed by André Le Nôtre.
 
-                    The estate includes the <b>Trianon Palaces</b> and <b>Marie-Antoinette</b>’s Estate, where visitors can explore
+                    The estate includes the <b>Trianon Palaces</b> and <b>Marie-Antoinette</b>’s Estate, where visitors
+                    can explore
                     the queen’s private retreat and the picturesque Hamlet. Versailles also serves as a venue for major
                     art exhibitions, cultural events, and state ceremonies, maintaining its role as a center of art and
                     diplomacy.
@@ -159,27 +163,6 @@
             </article>
         </section>
     </main>
-
-    <script>
-        const images = document.querySelectorAll('.history-content img');
-        const lightbox = document.createElement('div');
-        lightbox.className = 'lightbox';
-        document.body.appendChild(lightbox);
-
-        images.forEach(img => {
-            img.addEventListener('click', () => {
-                lightbox.classList.add('active');
-                const imgElement = document.createElement('img');
-                imgElement.src = img.src;
-                lightbox.innerHTML = ''; // Clear previous image
-                lightbox.appendChild(imgElement);
-            });
-        });
-
-        lightbox.addEventListener('click', () => {
-            lightbox.classList.remove('active');
-        });
-    </script>
 
 
     <footer>
