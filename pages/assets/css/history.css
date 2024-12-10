@@ -12,18 +12,18 @@ body {
     padding: 0 1em;
 }
 
-/* Header */
+
 .header {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0; /* it starts at the very left */
+    left: 0; /*it starts at the very left */
     z-index: 1000;
 }
 
 .header-nav {
     padding: 1em 2em;
-    background: #333; /* Semi-transparent black */
+    background: #333; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,13 +54,12 @@ a:hover {
     color: #ffd700;
 }
 
-/* Main Content */
 main {
-    margin-top: 100px; /* Push content below fixed header */
+    margin-top: 100px; 
 }
 
 .timeline {
-    background: #fef9d9; /* Pastel background for distinction */
+    background: #fef9d9;
     padding: 2em;
     border-radius: 8px;
     margin-bottom: 2em;
@@ -75,13 +74,13 @@ main {
 
 .timeline-container {
     display: flex;
-    overflow-x: scroll; /* Horizontal scroll for smaller screens */
+    overflow-x: scroll; 
     gap: 1.5em;
     padding: 1em 0;
 }
 
 .timeline-item {
-    flex: 0 0 250px; /* Fixed width for each timeline item */
+    flex: 0 0 250px; 
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -92,12 +91,12 @@ main {
 }
 
 .timeline-item:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 .timeline-item h3 {
     font-size: 1.5em;
-    color: #ffd700; /* Gold for emphasis */
+    color: #ffd700;
     margin-bottom: 0.5em;
 }
 
@@ -118,80 +117,80 @@ main {
 
 .history-content {
     display: flex;
-    flex-wrap: wrap; /* Allows multiple sections to adjust dynamically */
+    flex-wrap: wrap;
     gap: 2em;
     justify-content: space-between;
     margin-bottom: 2em;
 }
 
 .history-content article {
-    flex: 1 1 calc(48% - 1em); /* Allow sections to take up to 48% of the row */
-    background: #fef9d9; /* Light pastel for distinction */
+    flex: 1 1 calc(48% - 1em); 
+    background: #fef9d9; 
     border-radius: 8px;
     padding: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center-align content */
+    flex-direction: column;
+    align-items: center;
 }
 
 .history-content article img {
-    max-height: 300px; /* Restrict image height */
-    width: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Prevent image from exceeding container width */
-    border-radius: 8px; /* Rounded corners */
+    max-height: 300px; 
+    width: auto;
+    max-width: 100%;
+    border-radius: 8px; 
     margin-bottom: 1em;
-    object-fit: contain; /* Adjusts the image within the given space */
+    object-fit: contain;
 }
 
 .history-content article p {
-    text-align: justify; /* Improve readability */
+    text-align: justify; 
     margin-top: 0.5em;
 }
 
 .image-gallery {
-    display: flex; /* Enables a row layout for images */
-    gap: 3em; /* Adds space between images */
-    flex-wrap: wrap; /* Allows images to wrap onto the next row on smaller screens */
-    justify-content: center; /* Centers the gallery within the article */
-    margin: 1em 0; /* Adds spacing above and below the gallery */
+    display: flex;
+    gap: 3em; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 1em 0; 
 }
 
 .image-gallery img {
-    flex: 1 1 calc(33% - 1em); /* Each image takes up roughly 33% of the row */
-    max-width: 100%; /* Prevents images from exceeding their container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Adds rounded corners for a polished look */
-    object-fit: cover; /* Ensures images fit neatly without distortion */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
-    cursor: pointer; /* Makes images interactive */
-    transition: transform 0.3s; /* Adds a hover effect */
+    flex: 1 1 calc(33% - 1em); 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    transition: transform 0.3s; 
 }
 
 .image-gallery img:hover {
-    transform: scale(1.05); /* Slight zoom on hover for emphasis */
+    transform: scale(1.05); 
 }
 
-/* Target only the Louis XIV gallery */
+
 .louis-xiv-gallery {
-    display: flex; /* Enables side-by-side layout */
-    gap: 3em; /* Adds space between the images */
-    justify-content: center; /* Centers the images horizontally */
-    flex-wrap: nowrap; /* Prevents wrapping so the images stay side by side */
+    display: flex; 
+    gap: 3em;
+    justify-content: center;
+    flex-wrap: nowrap; 
 }
 
 .louis-xiv-gallery img {
-    flex: 1 1 45%; /* Each image takes up 45% of the container */
-    max-width: 100%; /* Ensures images don’t exceed their container width */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Adds rounded corners */
-    object-fit: cover; /* Ensures images fit neatly without distortion */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth with shadows */
+    flex: 1 1 45%; 
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .louis-xiv-gallery img:hover {
-    transform: scale(1.05); /* Slight zoom on hover for emphasis */
+    transform: scale(1.05); 
 }
 
 .history-content article h2 {
@@ -200,7 +199,7 @@ main {
     color: #333;
 }
 .history-content article {
-    flex: 1 1 auto; /* Dynamic size based on content */
+    flex: 1 1 auto; 
     padding: 1.5em;
     margin-bottom: 1em;
     background: #fef9d9;
@@ -214,7 +213,6 @@ main {
     color: #555;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: #fff;
